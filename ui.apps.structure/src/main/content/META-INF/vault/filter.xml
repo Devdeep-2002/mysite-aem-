@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <!-- /apps root -->
+    <filter root="/apps"/>
+    <filter root="/apps/mysite"/>
+    <!-- Common overlay roots -->
+    <filter root="/apps/sling"/>
+    <filter root="/apps/cq"/>
+    <filter root="/apps/dam"/>
+    <filter root="/apps/wcm"/>
+    <filter root="/apps/msm"/>
+    
+    <!-- Immutable context-aware configurations -->
+    <filter root="/apps/settings"/>
+    
+    <!-- DAM folder root, will be created via repoinit -->
+    <filter root="/content/dam/mysite"/>
+</workspaceFilter>

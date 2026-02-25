@@ -32,24 +32,6 @@
                     <properties>
                         <cloudManagerTarget>none</cloudManagerTarget>
                     </properties>
-                    <filters>
-                        <!-- /apps root -->
-                        <filter><root>/apps</root></filter>
-                        <filter><root>/apps/mysite</root></filter>
-                        <!-- Common overlay roots -->
-                                                <filter><root>/apps/sling</root></filter>
-                        <filter><root>/apps/cq</root></filter>
-                        <filter><root>/apps/dam</root></filter>
-                        <filter><root>/apps/wcm</root></filter>
-                        <filter><root>/apps/msm</root></filter>
-
-                        <!-- Immutable context-aware configurations -->
-                        <filter><root>/apps/settings</root></filter>
-
-                        <!-- DAM folder root, will be created via repoinit -->
-                        <filter><root>/content/dam/mysite</root></filter>
-
-                    </filters>
                 </configuration>
             </plugin>
         </plugins>
