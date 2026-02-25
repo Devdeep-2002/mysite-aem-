@@ -30,9 +30,7 @@ import org.slf4j.LoggerFactory;
  * Please note, that apart from EventHandler services,
  * the immediate flag should not be set on a service.
  */
-@Component(service = ResourceChangeListener.class,
-           immediate = true
-)
+@Component(service = ResourceChangeListener.class)
 @ServiceDescription("Demo to listen on changes in the resource tree")
 public class SimpleResourceListener implements ResourceChangeListener {
 
@@ -41,7 +39,7 @@ public class SimpleResourceListener implements ResourceChangeListener {
     @Override
     public void onChange(List<ResourceChange> changes) {
         changes.forEach(change -> {
-            logger.debug("Resource event: {} at: {} isExternal", change.getType(), change.getPath(), change.isExternal());
+            logger.debug("Resource event: {} at: {} isExternal: {}", change.getType(), change.getPath(), change.isExternal());
         });
         
     }

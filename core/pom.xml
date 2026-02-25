@@ -26,10 +26,6 @@
     <artifactId>mysite.core</artifactId>
     <name>My Site - Core</name>
     <description>Core bundle for My Site</description>
-    <properties>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
-    </properties>
     <build>
         <plugins>
             <plugin>
